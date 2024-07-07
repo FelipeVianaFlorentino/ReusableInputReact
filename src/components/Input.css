@@ -1,0 +1,45 @@
+.input-container {
+    display: flex;
+    height: 4em;
+    width: 100%;
+    position: relative;
+}
+
+input {
+    max-height: 3.5em;
+    width: 100%;
+    z-index: 1; 
+    font-size: 1em;
+    outline: none;
+    border: 1px solid;
+    border-color: black;
+    border-radius: 0.1em;
+    padding: 1em;
+    background-color: rgb(231, 233, 241);
+    transition: all 0.1s ease-in-out;
+}
+
+input:focus {
+    outline: 2px solid rgb(143, 164, 248);
+    border-color: rgb(48, 87, 242);;
+}
+
+label {
+    color: rgb(89, 89, 89);
+    position: absolute;
+    top: 50%;
+    left: 1em;
+    transform: translate(0, -50%);
+    z-index: 2;
+    pointer-events: none;
+    transition: all 0.2s;
+    background-color: rgb(231, 233, 241);
+    padding: 0 0.5em;
+    border-radius: 100%;
+}
+
+.label-active {
+    top: 0;
+    left: 0.5em;
+    font-size: 0.75em;
+}
